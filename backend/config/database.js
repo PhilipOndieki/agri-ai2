@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(process.env.MONGODB_Atlas_URI || 'mongodb://localhost:27017/agriai', {
+        const conn = await mongoose.connect(process.env.MONGODB_Atlas_URI ||  {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
